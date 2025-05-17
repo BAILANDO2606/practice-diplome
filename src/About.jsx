@@ -64,7 +64,7 @@ const About = () => {
 					<section className='contact-section'>
 						<h2>Зв’яжіться з нами</h2>
 						<div className='contact-details'>
-							<span>📍 м. Київ, вул. Технологічна, 12</span>
+							<p>📍 м. Коломия, вул. площа Шевченка, 23</p>
 							<span>📞 +380 96 123 45 67</span>
 							<a href='mailto:mobile.shop@example.com'>
 								📧 mobile.shop@example.com
