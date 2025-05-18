@@ -6,7 +6,9 @@ const Navbar = () => {
 	return (
 		<header className='navbar'>
 			<nav className='navbar-container'>
-				<h1 className='logo'>Мобайл</h1>
+				<h1 className='logo'>
+					<Link to='/'>Мобайл</Link>
+				</h1>
 				<ul className='nav-links'>
 					<li>
 						<Link to='/'>Головна</Link>
