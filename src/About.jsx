@@ -65,16 +65,14 @@ const About = () => {
 						<h2>Зв’яжіться з нами</h2>
 						<div className='contact-details'>
 							<p>📍 м. Коломия, вул. площа Шевченка, 23</p>
-							<span>📞 +380 96 123 45 67</span>
-							<a href='mailto:mobile.shop@example.com'>
-								📧 mobile.shop@example.com
-							</a>
+							<span>📞 +380 96 566 16 67</span>
 						</div>
 					</section>
 				</div>
 			</div>
 
 			<footer className='footer'>
+				<p>м. Коломия, вул. площа Шевченка, 23</p>
 				<p>© 2025 Магазин "Мобайл". Всі права захищено.</p>
 			</footer>
 		</div>
