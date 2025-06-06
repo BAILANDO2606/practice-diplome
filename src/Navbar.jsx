@@ -16,6 +16,12 @@ const Navbar = () => {
 					<li>
 						<Link to='/about'>Про нас</Link>
 					</li>
+					<li>
+						<Link to='/shop'>Магазин</Link>
+					</li>
+					<li>
+						<Link to='/cart'>Кошик</Link>
+					</li>
 				</ul>
 			</nav>
 		</header>

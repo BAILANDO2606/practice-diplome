@@ -61,19 +61,6 @@ const Home = () => {
 					</div>
 				</section>
 
-				{/* Партнери */}
-				<section className='partners'>
-					<h2>Наші партнери</h2>
-					<p>
-						Ми співпрацюємо з офіційними постачальниками запчастин та сервісами
-						Apple, Samsung, Xiaomi.
-					</p>
-					<div className='partner-logos'>
-						<span>🍏 Apple</span> <span>📱 Samsung</span> <span>🔧 Xiaomi</span>
-					</div>
-				</section>
-
-				{/* FAQ */}
 				<section>
 					<h2>Поширені запитання</h2>
 					<p>

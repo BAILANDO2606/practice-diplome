@@ -188,8 +188,7 @@ p {
 }
 
 /* Список послуг і партнерів */
-.service-list,
-.partner-logos {
+.service-list {
 	display: flex;
 	flex-wrap: wrap;
 	gap: 1rem;
