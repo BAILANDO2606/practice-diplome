@@ -6,7 +6,7 @@ const products = [
 		id: 1,
 		name: 'Смартфон',
 		price: 4999,
-		description: 'Смартфон із 6.5" екраном, 128 ГБ пам’яті, камера 48 Мп',
+		description: 'Смартфон із 6.5" екраном, 128 ГБ памяті, камера 48 Мп',
 		image: '',
 	},
 	{
@@ -102,10 +102,7 @@ const Shop = () => {
 	return (
 		<div className='shop-container'>
 			<h2 className='section-title'>Товари в нашому магазині</h2>
-			<ul
-				className='product-grid'
-				style={{ listStyle: 'none', padding: 0, margin: 0 }}
-			>
+			<ul className='product-grid'>
 				{products.map(product => (
 					<li key={product.id} className='product-card'>
 						<h3>{product.name}</h3>
