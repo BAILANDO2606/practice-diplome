@@ -5,7 +5,7 @@ const Home = () => {
 	return (
 		<div className='home-wrapper'>
 			<div className='home'>
-				<section className='hero-minimal'>
+				<div className='hero-minimal'>
 					<div className='hero-minimal-content'>
 						<div className='hero-icon'>🔧</div>
 						<h1 className='hero-title'>Сервіс "Мобайл"</h1>
@@ -13,9 +13,9 @@ const Home = () => {
 							Ремонт смартфонів, ноутбуків та гаджетів
 						</p>
 					</div>
-				</section>
+				</div>
 
-				<section className='services'>
+				<div className='services'>
 					<h2>Наші послуги</h2>
 					<div className='service-list'>
 						<div className='service-item'>📱 Ремонт смартфонів</div>
@@ -24,62 +24,97 @@ const Home = () => {
 						<div className='service-item'>📲 Відновлення після води</div>
 						<div className='service-item'>🛠 Діагностика та консультація</div>
 					</div>
-				</section>
+				</div>
 
-				<section className='why-us'>
+				<div className='why-us'>
 					<h2>Чому обирають нас</h2>
 					<ul>
 						<li>⚡ Швидке виконання замовлень — від 30 хвилин</li>
 						<li>🧰 Досвідчені майстри з 10+ років досвіду</li>
 						<li>🛡 Гарантія до 6 місяців на всі види ремонту</li>
 						<li>💬 Безкоштовна консультація перед ремонтом</li>
+						<li>🔒 Конфіденційність даних клієнта</li>
+						<li>🌱 Екологічний підхід до утилізації</li>
 					</ul>
-				</section>
+				</div>
 
-				<section className='how-we-work'>
+				<div className='how-we-work'>
 					<h2>Як ми працюємо</h2>
 					<ol>
-						<li> Ми проводимо безкоштовну діагностику</li>
-						<li> Узгоджуємо терміни та вартість</li>
-						<li> Проводимо ремонт і надаємо гарантію</li>
+						<li>Ми проводимо безкоштовну діагностику</li>
+						<li>Узгоджуємо терміни та вартість</li>
+						<li>Проводимо ремонт і надаємо гарантію</li>
+						<li>Пояснюємо причину поломки та даємо поради</li>
 					</ol>
-				</section>
+				</div>
 
-				<section className='map-section'>
-					<h2>Де ми знаходимося?</h2>
-					<div className='map-container'>
-						<iframe
-							title='Магазин Мобайл на карті'
-							width='100%'
-							height='400'
-							style={{ border: 0 }}
-							loading='lazy'
-							allowFullScreen
-							referrerPolicy='no-referrer-when-downgrade'
-							src='https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d165.15230895841682!2d25.038229073348184!3d48.52486588147771!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4736d2866b3f0c25%3A0xdf1f6f5d14d96ecf!2z0L_Qu9C-0YnQsCDQotCw0YDQsNGB0LAg0KjQtdCy0YfQtdC90LrQsCwgMjMsINCa0L7Qu9C-0LzQuNGPLCDQhtCy0LDQvdC-LdCk0YDQsNC90LrRltCy0YHRjNC60LAg0L7QsdC70LDRgdGC0YwsIDc4MjAw!5e0!3m2!1suk!2sua!4v1747514131138!5m2!1suk!2sua'
-						></iframe>
+				<div className='partners'>
+					<h2>Наші партнери</h2>
+					<div className='brand-logos'>
+						<img
+							src='https://upload.wikimedia.org/wikipedia/commons/2/24/Samsung_Logo.svg'
+							alt='Samsung'
+						/>
+						<img
+							src='https://upload.wikimedia.org/wikipedia/commons/2/29/Xiaomi_logo.svg'
+							alt='Xiaomi'
+						/>
+						<img
+							src='https://upload.wikimedia.org/wikipedia/commons/f/fa/Apple_logo_black.svg'
+							alt='Apple'
+						/>
 					</div>
-				</section>
+				</div>
 
-				<section>
+				<div className='faq-block'>
 					<h2>Поширені запитання</h2>
-					<p>
-						<strong>Скільки триває ремонт?</strong>
-					</p>
-					<p>Від 30 хвилин до 1-2 днів — залежно від поломки.</p>
+					<div className='faq-list'>
+						<div className='faq-item'>
+							<strong>Скільки триває ремонт?</strong>
+							<p>Від 30 хвилин до 1-2 днів — залежно від поломки.</p>
+						</div>
+						<div className='faq-item'>
+							<strong>Чи є гарантія?</strong>
+							<p>Так, гарантія до 6 місяців на всі роботи.</p>
+						</div>
+						<div className='faq-item'>
+							<strong>Чи можна залишити заявку онлайн?</strong>
+							<p>Так, натисніть кнопку "Замовити дзвінок".</p>
+						</div>
+						<div className='faq-item'>
+							<strong>Які бренди ви ремонтуєте?</strong>
+							<p>
+								Samsung, Apple, Xiaomi, Lenovo, Huawei, Realme, Oppo та інші.
+							</p>
+						</div>
+					</div>
+				</div>
 
-					<p>
-						<strong>Чи є гарантія?</strong>
-					</p>
-					<p>Так, гарантія до 6 місяців на всі роботи.</p>
+				<div className='values-block'>
+					<h2>Наші цінності</h2>
+					<ul className='values-list'>
+						<li>🤝 Довіра та чесність у відносинах з клієнтами</li>
+						<li>📈 Постійний розвиток та навчання майстрів</li>
+						<li>🌍 Відповідальність за екологію</li>
+						<li>💡 Використання сучасних технологій</li>
+						<li>⭐ Відкритість до нових ідей та інновацій</li>
+						<li>🫶 Підтримка місцевої спільноти</li>
+					</ul>
+				</div>
 
+				<div className='cta-block'>
+					<h2>Залишились питання?</h2>
 					<p>
-						<strong>Чи можна залишити заявку онлайн?</strong>
+						Зателефонуйте нам або залиште заявку — ми завжди раді допомогти!
 					</p>
-					<p>Так, натисніть кнопку "Замовити дзвінок".</p>
-				</section>
+					<div className='button-wrapper'>
+						<a href='tel:+380965661667' className='btn-secondary'>
+							<span className='mt-6'>Замовити дзвінок</span>
+						</a>
+					</div>
+				</div>
 
-				<section className='contact'>
+				<div className='contact'>
 					<h2>Графік роботи</h2>
 					<ul>
 						<li>Пн–Пт: 9:00 — 18:00</li>
@@ -87,10 +122,9 @@ const Home = () => {
 						<li>Нд: Вихідний</li>
 					</ul>
 					<h2>Зв’яжіться з нами</h2>
-					<a href='tel:+380965661667' className='btn-secondary'>
-						<span className='mt-6'>Замовити дзвінок</span>
-					</a>
-				</section>
+					<p className='contact-address'>м. Коломия, вул. площа Шевченка, 23</p>
+					<p className='contact-email'>Email: mobile.service@gmail.com</p>
+				</div>
 			</div>
 
 			<footer className='footer'>

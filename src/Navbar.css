@@ -1,81 +1,296 @@
-/* Заголовок і навбар */
+/* Navbar.css - Сучасний стиль 2025 */
+
 .navbar {
-	position: sticky;
+	position: fixed;
 	top: 0;
+	left: 0;
+	width: 100%;
 	z-index: 1000;
-	background: linear-gradient(90deg, #1b5e20, #388e3c);
-	box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+	background: rgba(255, 255, 255, 0.1);
+	backdrop-filter: blur(20px);
+	border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+	box-shadow: 0 8px 32px rgba(0, 0, 0, 0.1);
+	transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+	animation: slideDown 0.8s ease-out;
 }
 
-/* Контейнер */
+.navbar::before {
+	content: '';
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	background: linear-gradient(
+		135deg,
+		rgba(102, 126, 234, 0.1) 0%,
+		rgba(118, 75, 162, 0.1) 100%
+	);
+	pointer-events: none;
+}
+
 .navbar-container {
+	max-width: 1200px;
+	margin: 0 auto;
+	padding: 0 20px;
 	display: flex;
 	justify-content: space-between;
 	align-items: center;
-	padding: 1rem 2rem;
-	max-width: 1200px;
-	margin: 0 auto;
-}
-
-/* Логотип */
-.logo a {
-	font-size: 1.75rem;
-	font-weight: 800;
-	color: #fff;
-	text-decoration: none;
-	transition: transform 0.2s ease;
-}
-
-.logo a:hover {
-	transform: scale(1.05);
-}
-
-/* Навігаційні посилання */
-.nav-links {
-	list-style: none;
-	display: flex;
-	gap: 30px;
-}
-
-.nav-links a {
-	text-decoration: none;
-	color: #f1f1f1;
-	font-weight: 600;
-	font-size: 1rem;
+	height: 80px;
 	position: relative;
-	padding-bottom: 3px;
-	transition: all 0.3s ease;
+	z-index: 2;
 }
 
-.nav-links a::after {
+.logo {
+	font-size: 2rem;
+	font-weight: 800;
+	margin: 0;
+	position: relative;
+}
+
+.logo a {
+	text-decoration: none;
+	background: linear-gradient(135deg, #fff 0%, #f0f0f0 100%);
+	-webkit-background-clip: text;
+	-webkit-text-fill-color: transparent;
+	background-clip: text;
+	transition: all 0.3s ease;
+	position: relative;
+	letter-spacing: -0.02em;
+}
+
+.logo a::after {
 	content: '';
 	position: absolute;
-	width: 0%;
-	height: 2px;
+	bottom: -4px;
 	left: 0;
-	bottom: 0;
-	background-color: #ffffff;
-	transition: width 0.3s ease;
+	width: 0;
+	height: 3px;
+	background: linear-gradient(135deg, #ff6b6b, #4ecdc4);
+	border-radius: 2px;
+	transition: width 0.3s cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.nav-links a:hover::after {
+.logo a:hover::after {
 	width: 100%;
 }
 
-.nav-links a:hover {
-	color: #1a237e;
+.logo a:hover {
+	transform: translateY(-2px);
+	text-shadow: 0 4px 8px rgba(255, 255, 255, 0.2);
 }
 
-/* Адаптивність */
+.nav-links {
+	display: flex;
+	list-style: none;
+	margin: 0;
+	padding: 0;
+	gap: 8px;
+}
+
+.nav-links li {
+	position: relative;
+}
+
+.nav-links a {
+	display: block;
+	padding: 12px 24px;
+	text-decoration: none;
+	color: rgba(255, 255, 255, 0.9);
+	font-weight: 500;
+	font-size: 1.1rem;
+	border-radius: 12px;
+	transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+	position: relative;
+	overflow: hidden;
+}
+
+.nav-links a::before {
+	content: '';
+	position: absolute;
+	top: 0;
+	left: -100%;
+	width: 100%;
+	height: 100%;
+	background: linear-gradient(
+		90deg,
+		transparent,
+		rgba(255, 255, 255, 0.1),
+		transparent
+	);
+	transition: left 0.5s;
+}
+
+.nav-links a:hover::before {
+	left: 100%;
+}
+
+.nav-links a:hover {
+	background: rgba(255, 255, 255, 0.15);
+	color: white;
+	transform: translateY(-2px);
+	box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
+}
+
+.nav-links a.active {
+	background: rgba(255, 255, 255, 0.2);
+	color: white;
+	box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+.nav-links a.active::after {
+	content: '';
+	position: absolute;
+	bottom: 0;
+	left: 50%;
+	transform: translateX(-50%);
+	width: 24px;
+	height: 3px;
+	background: linear-gradient(135deg, #ff6b6b, #4ecdc4);
+	border-radius: 2px;
+}
+
+/* Mobile Menu Button (hidden by default) */
+.mobile-menu-btn {
+	display: none;
+	background: none;
+	border: none;
+	color: white;
+	font-size: 1.5rem;
+	cursor: pointer;
+	padding: 8px;
+	border-radius: 8px;
+	transition: all 0.3s ease;
+}
+
+.mobile-menu-btn:hover {
+	background: rgba(255, 255, 255, 0.1);
+}
+
+/* Animations */
+@keyframes slideDown {
+	from {
+		opacity: 0;
+		transform: translateY(-100%);
+	}
+	to {
+		opacity: 1;
+		transform: translateY(0);
+	}
+}
+
+/* Scroll effect for navbar */
+.navbar.scrolled {
+	background: rgba(255, 255, 255, 0.15);
+	backdrop-filter: blur(25px);
+	box-shadow: 0 12px 40px rgba(0, 0, 0, 0.15);
+}
+
+/* Responsive Design */
 @media (max-width: 768px) {
 	.navbar-container {
-		flex-direction: column;
-		align-items: flex-start;
+		padding: 0 16px;
+		height: 70px;
+	}
+
+	.logo {
+		font-size: 1.5rem;
 	}
 
 	.nav-links {
+		position: fixed;
+		top: 70px;
+		left: 0;
+		width: 100%;
 		flex-direction: column;
-		gap: 10px;
-		margin-top: 10px;
+		background: rgba(255, 255, 255, 0.1);
+		backdrop-filter: blur(20px);
+		border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+		box-shadow: 0 8px 32px rgba(0, 0, 0, 0.1);
+		transform: translateY(-100%);
+		opacity: 0;
+		visibility: hidden;
+		transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+		gap: 0;
+		padding: 20px;
+	}
+
+	.nav-links.active {
+		transform: translateY(0);
+		opacity: 1;
+		visibility: visible;
+	}
+
+	.nav-links li {
+		width: 100%;
+	}
+
+	.nav-links a {
+		padding: 16px 24px;
+		font-size: 1.2rem;
+		border-radius: 12px;
+		margin-bottom: 8px;
+		text-align: center;
+	}
+
+	.mobile-menu-btn {
+		display: block;
+	}
+}
+
+@media (max-width: 480px) {
+	.navbar-container {
+		padding: 0 12px;
+		height: 65px;
+	}
+
+	.logo {
+		font-size: 1.3rem;
+	}
+
+	.nav-links {
+		top: 65px;
+		padding: 16px;
+	}
+
+	.nav-links a {
+		padding: 14px 20px;
+		font-size: 1.1rem;
+	}
+}
+
+/* Accessibility improvements */
+@media (prefers-reduced-motion: reduce) {
+	.navbar,
+	.logo a,
+	.nav-links a,
+	.mobile-menu-btn {
+		animation: none;
+		transition: none;
+	}
+}
+
+/* Focus states for keyboard navigation */
+.logo a:focus,
+.nav-links a:focus,
+.mobile-menu-btn:focus {
+	outline: 2px solid rgba(255, 255, 255, 0.5);
+	outline-offset: 2px;
+}
+
+/* High contrast mode support */
+@media (prefers-contrast: high) {
+	.navbar {
+		background: rgba(0, 0, 0, 0.9);
+		border-bottom: 2px solid white;
+	}
+
+	.logo a,
+	.nav-links a {
+		color: white;
+	}
+
+	.nav-links a:hover {
+		background: rgba(255, 255, 255, 0.2);
 	}
 }

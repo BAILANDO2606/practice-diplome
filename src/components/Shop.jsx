@@ -44,6 +44,48 @@ const products = [
 		description: 'Швидка зарядка 20W USB-C',
 		image: '',
 	},
+	{
+		id: 7,
+		name: 'Remax Chinen',
+		price: 1720,
+		description: 'Швидка зарядка 20W USB-C',
+		image: '',
+	},
+	{
+		id: 8,
+		name: 'Remax Chinen',
+		price: 1720,
+		description: 'Швидка зарядка 20W USB-C',
+		image: '',
+	},
+	{
+		id: 9,
+		name: 'Remax Chinen',
+		price: 1720,
+		description: 'Швидка зарядка 20W USB-C',
+		image: '',
+	},
+	{
+		id: 10,
+		name: 'Remax Chinen',
+		price: 1720,
+		description: 'Швидка зарядка 20W USB-C',
+		image: '',
+	},
+	{
+		id: 11,
+		name: 'Remax Chinen',
+		price: 1720,
+		description: 'Швидка зарядка 20W USB-C',
+		image: '',
+	},
+	{
+		id: 12,
+		name: 'Remax Chinen',
+		price: 1720,
+		description: 'Швидка зарядка 20W USB-C',
+		image: '',
+	},
 ]
 
 const Shop = () => {
