@@ -230,29 +230,6 @@ body {
 	background: rgba(255, 255, 255, 0.15);
 }
 
-/* Partners */
-.brand-logos {
-	display: flex;
-	justify-content: center;
-	align-items: center;
-	gap: 60px;
-	margin-top: 40px;
-	flex-wrap: wrap;
-}
-
-.brand-logos img {
-	height: 60px;
-	width: auto;
-	filter: brightness(0) invert(1);
-	opacity: 0.8;
-	transition: all 0.3s ease;
-}
-
-.brand-logos img:hover {
-	opacity: 1;
-	transform: scale(1.1);
-}
-
 /* FAQ */
 .faq-list {
 	display: grid;
@@ -288,42 +265,35 @@ body {
 	line-height: 1.6;
 }
 
-/* Values */
-.values-list {
-	list-style: none;
+/* Contact */
+.contact {
 	display: grid;
-	grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
-	gap: 24px;
-	margin-top: 40px;
+	grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+	gap: 48px;
+	text-align: center;
 }
 
-.values-list li {
+.contact h2 {
+	color: white;
+	font-size: 2rem;
+	margin-bottom: 24px;
+	font-weight: 600;
+}
+
+.contact ul {
+	list-style: none;
+}
+
+.contact li {
 	background: rgba(255, 255, 255, 0.1);
 	backdrop-filter: blur(10px);
 	border: 1px solid rgba(255, 255, 255, 0.2);
-	border-radius: 16px;
-	padding: 24px;
+	border-radius: 12px;
+	padding: 16px 24px;
+	margin-bottom: 12px;
 	color: white;
 	font-size: 1.1rem;
 	font-weight: 500;
-	transition: all 0.3s ease;
-}
-
-.values-list li:hover {
-	transform: translateY(-4px);
-	background: rgba(255, 255, 255, 0.15);
-}
-
-/* CTA Block */
-.cta-block {
-	text-align: center;
-	color: white;
-}
-
-.cta-block p {
-	font-size: 1.3rem;
-	margin-bottom: 40px;
-	color: rgba(255, 255, 255, 0.9);
 }
 
 .button-wrapper {
@@ -368,44 +338,6 @@ body {
 
 .btn-secondary:hover::before {
 	left: 100%;
-}
-
-/* Contact */
-.contact {
-	display: grid;
-	grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-	gap: 48px;
-	text-align: center;
-}
-
-.contact h2 {
-	color: white;
-	font-size: 2rem;
-	margin-bottom: 24px;
-	font-weight: 600;
-}
-
-.contact ul {
-	list-style: none;
-}
-
-.contact li {
-	background: rgba(255, 255, 255, 0.1);
-	backdrop-filter: blur(10px);
-	border: 1px solid rgba(255, 255, 255, 0.2);
-	border-radius: 12px;
-	padding: 16px 24px;
-	margin-bottom: 12px;
-	color: white;
-	font-size: 1.1rem;
-	font-weight: 500;
-}
-
-.contact-address,
-.contact-email {
-	color: rgba(255, 255, 255, 0.9);
-	font-size: 1.2rem;
-	font-weight: 500;
 }
 
 /* Footer */
@@ -475,18 +407,6 @@ body {
 
 	.how-we-work li {
 		padding: 24px 24px 24px 32px;
-	}
-
-	.brand-logos {
-		gap: 40px;
-	}
-
-	.brand-logos img {
-		height: 40px;
-	}
-
-	.values-list {
-		grid-template-columns: 1fr;
 	}
 
 	.contact {
