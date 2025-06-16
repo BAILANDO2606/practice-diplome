@@ -7,7 +7,7 @@ const Home = () => {
 			<div className='home'>
 				<section className='hero-minimal'>
 					<div className='hero-minimal-content'>
-						<h1 className='hero-title'>Сервіс "Мобайл"</h1>
+						<h1 className='hero-title'>Магазин "Мобайл"</h1>
 						<p className='hero-subtitle'>
 							Ремонт смартфонів, ноутбуків та гаджетів
 						</p>

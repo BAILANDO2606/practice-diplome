@@ -153,6 +153,47 @@ body {
 	box-shadow: 0 32px 64px rgba(0, 0, 0, 0.15);
 }
 
+/* Product Image Styles */
+.product-image-container {
+	width: 200px;
+	height: 200px;
+	margin: 0 auto 24px;
+	border-radius: 16px;
+	overflow: hidden;
+	background: rgba(255, 255, 255, 0.1);
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	position: relative;
+}
+
+.product-image {
+	width: 100%;
+	height: 100%;
+	object-fit: cover;
+	border-radius: 12px;
+	transition: transform 0.3s ease;
+}
+
+.product-image:hover {
+	transform: scale(1.05);
+}
+
+.product-image-placeholder {
+	width: 100%;
+	height: 100%;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	background: linear-gradient(135deg, #4ecdc4, #44a08d);
+	border-radius: 12px;
+	color: white;
+	font-size: 1rem;
+	font-weight: 600;
+	text-align: center;
+	padding: 20px;
+}
+
 .product-card h3 {
 	font-size: 1.5rem;
 	font-weight: 700;
@@ -243,6 +284,25 @@ body {
 	box-shadow: 0 32px 64px rgba(0, 0, 0, 0.2);
 	animation: modalSlideIn 0.3s ease-out;
 	position: relative;
+}
+
+.modal-image-container {
+	width: 250px;
+	height: 250px;
+	margin: 0 auto 24px;
+	border-radius: 16px;
+	overflow: hidden;
+	background: rgba(255, 255, 255, 0.1);
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+.modal-image {
+	width: 100%;
+	height: 100%;
+	object-fit: cover;
+	border-radius: 12px;
 }
 
 .modal-content h3 {
@@ -337,6 +397,11 @@ body {
 		padding: 24px;
 	}
 
+	.product-image-container {
+		width: 160px;
+		height: 160px;
+	}
+
 	.product-card h3 {
 		font-size: 1.3rem;
 	}
@@ -353,6 +418,11 @@ body {
 	.modal-content {
 		padding: 32px 24px;
 		margin: 20px;
+	}
+
+	.modal-image-container {
+		width: 200px;
+		height: 200px;
 	}
 
 	.modal-content h3 {
@@ -382,6 +452,11 @@ body {
 		padding: 20px;
 	}
 
+	.product-image-container {
+		width: 140px;
+		height: 140px;
+	}
+
 	.product-card h3 {
 		font-size: 1.2rem;
 	}
@@ -398,6 +473,11 @@ body {
 	.modal-content {
 		padding: 24px 20px;
 		margin: 16px;
+	}
+
+	.modal-image-container {
+		width: 180px;
+		height: 180px;
 	}
 
 	.modal-content h3 {

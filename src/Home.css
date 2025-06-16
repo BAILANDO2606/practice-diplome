@@ -66,13 +66,6 @@ body {
 	animation: fadeInUp 1s ease-out;
 }
 
-.hero-icon {
-	font-size: 120px;
-	margin-bottom: 40px;
-	display: inline-block;
-	animation: float 3s ease-in-out infinite;
-}
-
 .hero-title {
 	font-size: clamp(3rem, 8vw, 6rem);
 	font-weight: 800;
