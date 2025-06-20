@@ -2,7 +2,6 @@ import React, { useState } from 'react'
 import './Shop.css'
 
 const products = [
-	// Перший рядок - Чохли
 	{
 		id: 1,
 		name: 'Чохол для iPhone 14 Pro',
@@ -35,7 +34,6 @@ const products = [
 		image:
 			'https://images.unsplash.com/photo-1704002100891-8ef33cfa1d62?q=80&w=2680&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D',
 	},
-	// Другий рядок - Зарядки
 	{
 		id: 5,
 		name: 'Зарядка USB-C 20W',
@@ -68,7 +66,6 @@ const products = [
 		image:
 			'https://plus.unsplash.com/premium_photo-1669261149433-febd56c05327?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTd8fGNoYXJnZXJ8ZW58MHx8MHx8fDA%3D',
 	},
-	// Третій рядок - Павербанки
 	{
 		id: 9,
 		name: 'Power Bank 10000mAh',
